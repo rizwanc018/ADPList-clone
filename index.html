@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ADPList</title>
+</head>
+
+<body>
+    <header class="flex space-between ">
+        <img src="/assets/images/logo-text.png" alt="logo">
+        <nav class="nav">
+            <ul role='list'>
+                <li><a href="https://adplist.org/become-a-mentor">Become a mentor</a></li>
+                <li><a href="https://adplist.org/explore?tab=mentors">Find a mentor</a></li>
+                <!-- <li><button class="login">Log in</button></li> -->
+                <!-- <li><button class="signup">Sign up</button></li> -->
+            </ul>
+        </nav>
+        <button class="login">Log in</button>
+        <button class="signup">Sign up</button>
+    </header>
+    <main>
+        <section class="hero">
+            <nav>
+                <a class="mentee active" href="#">Mentee</a>
+                <a class="mentor " href="#">Mentor</a>
+            </nav>
+            <div class="mentee-box show">
+                <h1>Learn and grow with help from world-class mentors for free</h1>
+                <h4>Book and meet over <strong>10,673+</strong> mentors for 1:1 mentorship in our global community.</h4>
+                <form class="flex search-wrapper" action="#">
+                    <i class="material-icons">search</i>
+                    <input type="search" placeholder="Search by company, language or role">
+                    <!-- <div class="divider"></div> -->
+                    <select class="expertise" name="expertise" id="expertise">
+                        <!-- disabled selected hidden -->
+                        <option value="" hidden>Expertise</option>
+                        <option value="1">Content Writing</option>
+                        <option value="2">Data Science</option>
+                        <option value="3">Marketing</option>
+                        <option value="4">Design</option>
+                        <option value="5">Product Management</option>
+                        <option value="6">Software Development</option>
+                    </select>
+                    <!-- <div class="divider"></div> -->
+                    <select class="country" name="country" id="country">
+                        <!-- disabled selected hidden -->
+                        <option value="" hidden>Country</option>
+                    </select>
+                    <button>Search</button>
+                </form>
+            </div>
+            <div class="mentor-box">
+                <h1>Your next chapter, made possible by mentoring</h1>
+                <h4>Build confidence as a leader, grow your network, and define your legacy.</h4>
+                <button>Become a Mentor</button>
+            </div>
+            <img src="/assets/images/hero-images/1.jpg" alt="">
+            <img src="/assets/images/hero-images/29.jpg" alt="">
+            <img src="/assets/images/hero-images/32.jpg" alt="">
+            <img src="/assets/images/hero-images/44.jpg" alt="">
+            <img src="/assets/images/hero-images/46.jpg" alt="">
+            <img src="/assets/images/hero-images/52.jpg" alt="">
+            <img src="/assets/images/hero-images/97.jpg" alt="">
+        </section>
+        <section class="clients">
+            <p>Over 5000+ companies joined us</p>
+            <div class="flex slick slick-slider">
+                <img src="/assets/images/supporters/airbng.svg" alt="">
+                <img src="/assets/images/supporters/atlassian.svg" alt="">
+                <img src="/assets/images/supporters/booking.svg" alt="">
+                <img src="/assets/images/supporters/calendly.svg" alt="">
+                <img src="/assets/images/supporters/discord.svg" alt="">
+                <img src="/assets/images/supporters/figma.svg" alt="">
+                <img src="/assets/images/supporters/google.svg" alt="">
+                <img src="/assets/images/supporters/microsoft.svg" alt="">
+                <img src="/assets/images/supporters/slack.svg" alt="">
+                <img src="/assets/images/supporters/spotify.svg" alt="">
+                <img src="/assets/images/supporters/stripe.svg" alt="">
+                <img src="/assets/images/supporters/webflow.svg" alt="">
+            </div>
+        </section>
+
+        <section class="learnandgrow">
+            <h2>Learn and grow across expertise for free</h2>
+            <p>Find mentors from product fields across the globe</p>
+            <div class="topics">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/icons/design.svg" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Design</h3>
+                        <p>7761 mentors</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/icons/product-management.svg" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Product Management</h3>
+                        <p>2669 mentors</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/icons/data-science.svg" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Data Science</h3>
+                        <p>83 mentors</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/icons/content-writing.svg" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Content Writing</h3>
+                        <p>175 mentors</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/icons/marketing.svg" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Marketing</h3>
+                        <p>926 mentors</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/icons/software-development.svg" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Software Development</h3>
+                        <p>1184 mentors</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/icons/product-research.svg" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Product Research</h3>
+                        <p>1868 mentors</p>
+                    </div>
+                </div>
+            </div>
+            <button>Explore all mentors</button>
+        </section>
+
+        <section class="features">
+            <div class="features-card">
+                <!-- <div class="ftr-img"> -->
+                <img src="/assets/images/features/1.png" alt="">
+                <!-- </div> -->
+                <div>
+                    <h2>Leap 10x career growth with iconic mentors</h2>
+                    <p>If you're looking for advice, jamming or networking - ADPList lets you freely schedule a 1:1
+                        mentorship session in fun new ways and work with them directly.</p>
+                    <button>Explore all mentors</button>
+                </div>
+            </div>
+            <div class="features-card">
+                <div>
+                    <h2>Speed your way to new knowledge and network</h2>
+                    <p>Designed for quick wins - experience a lineup of extraordinary mentors from all around the way in
+                        just a click with our super matching system.</p>
+
+                    <button>Get a match today</button>
+                </div>
+                <!-- <div class="ftr-img"> -->
+                <img src="/assets/images/features/2.png" alt="">
+                <!-- </div> -->
+            </div>
+            <div class="features-card">
+                <!-- <div class="ftr-img"> -->
+                <img src="/assets/images/features/3.png" alt="">
+                <!-- </div> -->
+                <div>
+                    <h2>More visible, get scouted as a talent</h2>
+                    <p>Out of a job, not out of touch. ADPList lets you list yourself as a talent in the community and
+                        get
+                        vouched by mentors - boosting your credentials to get hired fast.</p>
+                    <button>Sign up as talent</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mentors">
+            <div class="top">
+                <h3>Discover the world's top mentors</h3>
+                <div>
+                    <button>Explore all</button>
+                    <img src="/assets/images/mentor-icons/scroll-left.png" alt="">
+                    <img src="/assets/images/mentor-icons/scroll-right.png" alt="">
+                </div>
+            </div>
+            <div class="mentors-slick-container">
+                <div>
+                    <div class="rating">
+                        <p>⚡️Available ASAP</p>
+                        <img src="/assets/images/mentor-icons/heart.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <p>Jhon Doe</p>
+                        <img src="/assets/images/mentor-icons/box.svg" alt="">
+                        <span>Product Designer</span>
+                        <div></div>
+                        <img src="/assets/images/mentor-icons/chat.svg" alt="">
+                        <span>Job search, Career advice</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="rating">
+                        <p>⚡️Available ASAP</p>
+                        <img src="/assets/images/mentor-icons/heart.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <p>Chee Seng</p>
+                        <img src="/assets/images/mentor-icons/box.svg" alt="">
+                        <span>Communication Design</span>
+                        <div></div>
+                        <img src="/assets/images/mentor-icons/chat.svg" alt="">
+                        <span>Job search, Career advice</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="rating">
+                        <p>⚡️Available ASAP</p>
+                        <img src="/assets/images/mentor-icons/heart.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <p>Mohammed Safi</p>
+                        <img src="/assets/images/mentor-icons/box.svg" alt="">
+                        <span>Program Manager</span>
+                        <div></div>
+                        <img src="/assets/images/mentor-icons/chat.svg" alt="">
+                        <span>Job search, Career advice</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="rating">
+                        <p>⚡️Available ASAP</p>
+                        <img src="/assets/images/mentor-icons/heart.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <p>Maria Paula</p>
+                        <img src="/assets/images/mentor-icons/box.svg" alt="">
+                        <span>Assistant Proffessor</span>
+                        <div></div>
+                        <img src="/assets/images/mentor-icons/chat.svg" alt="">
+                        <span>Job search, Career advice</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="rating">
+                        <p>⚡️Available ASAP</p>
+                        <img src="/assets/images/mentor-icons/heart.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <p>Paulo Fantom</p>
+                        <img src="/assets/images/mentor-icons/box.svg" alt="">
+                        <span>Marketing Manager</span>
+                        <div></div>
+                        <img src="/assets/images/mentor-icons/chat.svg" alt="">
+                        <span>Job search, Career advice</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="rating">
+                        <p>⚡️Available ASAP</p>
+                        <img src="/assets/images/mentor-icons/heart.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <p>Andressa Seigel</p>
+                        <img src="/assets/images/mentor-icons/box.svg" alt="">
+                        <span></span>
+                        <div></div>
+                        <img src="/assets/images/mentor-icons/chat.svg" alt="">
+                        <span>Job search, Career advice</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="rating">
+                        <p>⚡️Available ASAP</p>
+                        <img src="/assets/images/mentor-icons/heart.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <p>Ng Sze</p>
+                        <img src="/assets/images/mentor-icons/box.svg" alt="">
+                        <span>Creative Producer</span>
+                        <div></div>
+                        <img src="/assets/images/mentor-icons/chat.svg" alt="">
+                        <span>Job search, Career advice</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="rating">
+                        <p>⚡️Available ASAP</p>
+                        <img src="/assets/images/mentor-icons/heart.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <p>Manish Kothari</p>
+                        <img src="/assets/images/mentor-icons/box.svg" alt="">
+                        <span>Communication Manager</span>
+                        <div></div>
+                        <img src="/assets/images/mentor-icons/chat.svg" alt="">
+                        <span>Job search, Career advice</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>See what our members are saying.</h2>
+            <div class="slick-left slick">
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/babalola" alt="">
+                        <div class="user-details">
+                            <p>Babalola Zhang</p>
+                            <p>Student, Cleveland</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/masha" alt="">
+                        <div class="user-details">
+                            <p>Masha markgraf</p>
+                            <p>Founder and CEO, Westland</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/lara" alt="">
+                        <div class="user-details">
+                            <p>Lara Lopez</p>
+                            <p>Designer, TX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/Veronicahira" alt="">
+                        <div class="user-details">
+                            <p>Veronica white</p>
+                            <p>UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/erica" alt="">
+                        <div class="user-details">
+                            <p>Erica baremo</p>
+                            <p>Student, Springboard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/lake" alt="">
+                        <div class="user-details">
+                            <p>Lake Cam</p>
+                            <p>UX/UI designer, Creative media</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-right">
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/babalola" alt="">
+                        <div class="user-details">
+                            <p>Babalola Zhang</p>
+                            <p>Student, Cleveland</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/masha" alt="">
+                        <div class="user-details">
+                            <p>Masha markgraf</p>
+                            <p>Founder and CEO, Westland</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/lara" alt="">
+                        <div class="user-details">
+                            <p>Lara Lopez</p>
+                            <p>Designer, TX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/Veronicahira" alt="">
+                        <div class="user-details">
+                            <p>Veronica white</p>
+                            <p>UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/erica" alt="">
+                        <div class="user-details">
+                            <p>Erica baremo</p>
+                            <p>Student, Springboard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared valuable advice.
+                        He's also a great storyteller! Definitely book a session with him 😊</p>
+                    <div class="user">
+                        <img src="https://robohash.org/lake" alt="">
+                        <div class="user-details">
+                            <p>Lake Cam</p>
+                            <p>UX/UI designer, Creative media</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row1">
+                <img src="/assets/images/logo.png" alt="">
+                <p>To inspire powerful conversations and collaborations among members worldwide so together we can
+                    change
+                    the world with creativity.</p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/"><img src="assets/images/social-icons/youtube.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img src="assets/images/social-icons/linkedin.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img src="assets/images/social-icons/twitter.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img src="assets/images/social-icons/insta.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img src="assets/images/social-icons/facebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img src="assets/images/social-icons/tiktok.png" alt=""></a>
+                </div>
+            </div>
+            <!-- <div class=""></div> -->
+            <div class="row2 space-between">
+                <ul>
+                    <li><a href="https://adplist.org/explore?tab=mentors">find mentors</a></li>
+                    <li><a href="https://adplist.org/become-a-mentor">become a mentor</a></li>
+                    <li><a href="https://blog.adplist.org/">community</a></li>
+                    <li><a href="https://blog.adplist.org/">blog</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://app.adplist.org/login">join adplist</a></li>
+                    <li><a href="https://adplist.org/faqs">FAQs</a></li>
+                    <li><a href="https://adplist.notion.site/ADPList-Knowledge-hub-e3afba73ec4c4284bc02313c422eecee">help
+                            center</a></li>
+                    <li><a href="mailto: partnerships@adplist.org">partnerships</a></li>
+                </ul>
+            </div>
+            <div class="row3 space-between">
+                <p>Copyright 2022 - ADPList</p>
+                <ul>
+                    <li><a href="mailto: support@adplist.org">Contact us</a></li>
+                    <li><a href="https://www.adplist.org/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://www.adplist.org/terms-and-conditions">Terms of use</a></li>
+                    <li><a href="https://adplist.org/sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
