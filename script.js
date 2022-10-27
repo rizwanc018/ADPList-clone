@@ -4,6 +4,49 @@ const mentor = document.querySelector(`.mentor`);
 const menteeBox = document.querySelector(`.mentee-box`);
 const mentorBox = document.querySelector(`.mentor-box`);
 
+const splide = new Splide( '#slider1', {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    pagination   : false,
+    arrows : false,
+    perPage: 7,
+    gap: '2rem',
+    autoScroll: {
+      speed: 2,
+      pauseOnHover: false,
+    },
+  } );
+  splide.mount( window.splide.Extensions );
+
+   splideLeft = new Splide( '#slider2', {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    pagination   : false,
+    arrows : false,
+    perPage: 4,
+    autoScroll: {
+      speed: 1,
+      pauseOnHover: false,
+    },
+  } );
+  splideLeft.mount( window.splide.Extensions );
+
+  splideLeft = new Splide( '#slider3', {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    pagination   : false,
+    arrows : false,
+    perPage: 4,
+    autoScroll: {
+      speed: -1,
+      pauseOnHover: false,
+    },
+  } );
+  splideLeft.mount( window.splide.Extensions );
+
 
 const countries = [];
 let countryOptions;

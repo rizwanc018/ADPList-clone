@@ -10,7 +10,6 @@
     --adp-grad-3: linear-gradient(99.87deg, #0b0d60 -10.92%, #115962 107.49%);
 }
 
-
 *,
 *::before,
 *::after {
@@ -79,7 +78,7 @@ select {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--font-clr-drk-pr);
-    padding-inline: 3rem;
+    padding-inline: 6rem;
     font-size: 16px;
 }
 
@@ -107,7 +106,7 @@ select {
 }
 
 header {
-    padding-top: .75rem;
+    padding: .5rem;
     padding-inline: .75rem;
     position: fixed;
     top: 0;
@@ -167,6 +166,7 @@ button {
 .hero {
     padding-block: 9.5rem;
     position: relative;
+    margin-block: 4rem;
 }
 
 .hero nav a:first-child {
@@ -176,12 +176,13 @@ button {
 .hero nav a {
     padding-block: .75rem;
     border-bottom: 1px solid var(--brdr-clr);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .hero nav a.active {
     color: var(--font-clr-hvr);
     border-bottom: 3px solid var(--font-clr-hvr);
-
 }
 
 .mentee-box,
@@ -197,7 +198,7 @@ button {
 
 .mentee-box h1,
 .mentor-box h1 {
-    font-weight: 800;
+    font-weight: 700 !important;
     font-size: 44px;
     margin-bottom: 3rem;
     width: 65%;
@@ -217,9 +218,9 @@ form {
     filter: drop-shadow(0px 4px 19px rgba(142, 151, 158, 0.15));
     border-radius: 16px;
     padding: .45rem .5rem;
-    width: fit-content;
+    min-width: 58rem;
+    max-width: fit-content;
     /* width: 75%; */
-
 }
 
 form * {
@@ -233,7 +234,7 @@ form * {
 }
 
 form input[type="search"] {
-    width: 20rem;
+    width: 18rem;
     height: 2.5rem;
     border-right: 1px solid var(--brdr-clr);
 }
@@ -260,7 +261,7 @@ form input[type="search"] {
     padding: 1.25rem 2rem;
     color: white;
     font-weight: 600;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
 }
 
 
@@ -309,28 +310,28 @@ form input[type="search"] {
 }
 
 .hero img:nth-of-type(5) {
-    width: 6.5rem;
+    width: 5.5rem;
     aspect-ratio: 1;
-    top: 33.6rem;
+    top: 35.3rem;
     right: 1.5rem;
 }
 
 .hero img:nth-of-type(6) {
     width: 5rem;
     aspect-ratio: 1;
-    top: 35.67rem;
+    top: 36.3rem;
     right: 14.8rem;
 }
 
 .hero img:nth-of-type(7) {
     width: 6.5rem;
     aspect-ratio: 1;
-    top: 37.87rem;
+    top: 38.5rem;
     right: 24rem;
 }
 
 .clients {
-    padding-block: 5rem;
+    padding-block: 5rem 2rem;
 }
 
 .clients p {
@@ -339,10 +340,11 @@ form input[type="search"] {
     font-weight: 700;
 }
 
-.slick-slider {
-    margin: 2rem -60rem;
-    gap: 6rem;
+.clients .slick-slider {
+    margin: 2rem -10rem;
+    gap: 1rem;
 }
+
 
 .learnandgrow {
     background-color: #f0f6f9;
@@ -370,7 +372,6 @@ form input[type="search"] {
     max-width: 57.7rem;
     margin: 5rem auto;
     gap: 2.5rem;
-    border: 2px solid red;
 }
 
 .topics .card {
@@ -506,11 +507,15 @@ form input[type="search"] {
     align-items: center;
 }
 
-
-
 .mentors .top h3,
 .mentors .top button {
     font-weight: 600;
+}
+
+.mentors .top > div {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
 }
 
 .mentors .top img {
@@ -644,7 +649,8 @@ form input[type="search"] {
 .testimonials {
     background-color: hsl(0, 0%, 7%);
     padding-block: 4.5rem;
-    margin-inline: -50rem;
+    margin-inline: -38rem;
+    line-height: 1.5rem;
 }
 
 .testimonials h2 {
@@ -652,36 +658,42 @@ form input[type="search"] {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
+
+
 }
 
 .slick-left,
 .slick-right {
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
     margin-block: 2rem;
 }
 
 
 .testimonial-card {
     min-width: 32rem;
-    height: 14.2rem;
+    max-width: min-content;
+    /* height: 14.2rem; */
     background: hsla(0, 0%, 100%, 1);
     border-radius: 10px;
-    padding: 2.25rem 1.5rem;
-    font-size: 13px;
+    padding: 1.75rem 1.5rem;
+    font-size: 14px;
     font-weight: 600;
 
+    /* margin-inline: 10rem; */
 }
 
 .testimonial-card>p {
-    color: var(--font-clr-drk-sc);
+    /* color: var(--font-clr-drk-sc); */
+    color: hsl(204, 19%, 27%);
+    /* color: black; */
 }
 
 .testimonial-card .user {
     display: flex;
     gap: 1rem;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .testimonial-card .user img {
@@ -694,9 +706,7 @@ footer {
     background: hsla(0, 0%, 98%, 1);
     padding-inline: 50rem;
     margin-inline: -50rem;
-
 }
-
 
 .row1,
 .row2,
@@ -705,16 +715,17 @@ footer {
 .row3 ul {
     display: flex;
     gap: 1.2rem;
+    align-items: center;
 }
 
 .row1>img {
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 .row1>p {
     width: 50%;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: var(--font-clr-drk-sc);
 }
@@ -751,7 +762,3 @@ footer {
 .row3 a {
     text-decoration: underline;
 }
-
-/* body {
-    background-color: black;
-} */
