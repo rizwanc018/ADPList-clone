@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="style.css">
@@ -14,19 +15,44 @@
 </head>
 
 <body>
-    <header class="flex space-between ">
-        <img src="/assets/images/logo-text.png" alt="logo">
-        <nav class="nav">
+    <header class="header hideSome" id="header">
+        <img class="logo" src="/assets/images/logo-text.png" alt="logo">
+        <nav class="nav show">
             <ul role='list'>
                 <li><a href="https://adplist.org/become-a-mentor">Become a mentor</a></li>
                 <li><a href="https://adplist.org/explore?tab=mentors">Find a mentor</a></li>
                 <!-- <li><button class="login">Log in</button></li> -->
                 <!-- <li><button class="signup">Sign up</button></li> -->
             </ul>
+            <button class="login">Log in</button>
+            <button class="signup">Sign up</button>
+            <a href="javascript:void(0);" class="icon-bar showIcon" id="icon-bar" onclick="myFunction()">
+                <!-- <i class="fa fa-bars"></i> -->
+                <i><img src="/bar.svg" alt=""></i>
+              </a>  <a href="javascript:void(0);" id="icon-close" class="icon-close" onclick="myFunction()">
+                <!-- <i class="fa fa-close"></i> -->
+                <i><img src="/close.svg" alt=""></i>
+              </a>
         </nav>
-        <button class="login">Log in</button>
-        <button class="signup">Sign up</button>
+        <!-- <button class="login">Log in</button> -->
+        <!-- <button class="signup">Sign up</button> -->
     </header>
+
+    <script>
+        function myFunction() {
+          let header = document.getElementById("header");
+          let bar = document.getElementById("icon-bar")
+          let close = document.getElementById("icon-close")
+
+        //   if (header.className === "header") {
+            header.classList.toggle('responsive');
+            header.classList.toggle('hideSome')
+            bar.classList.toggle('showIcon');
+            close.classList.toggle('showIcon')
+        //   } 
+        }
+        </script>
+
     <main>
         <section class="hero">
             <nav>
@@ -207,12 +233,12 @@
                 <h3>Discover the world's top mentors</h3>
                 <div>
                     <button>Explore all</button>
-                    <img src="/assets/images/mentor-icons/scroll-left.png" alt="">
-                    <img src="/assets/images/mentor-icons/scroll-right.png" alt="">
+                    <!-- <img src="/assets/images/mentor-icons/scroll-left.png" alt="">
+                    <img src="/assets/images/mentor-icons/scroll-right.png" alt=""> -->
                 </div>
             </div>
             <div class="mentors-slick-container">
-                <div>
+                <div class="mentor-card">
                     <div class="rating">
                         <p>⚡️Available ASAP</p>
                         <img src="/assets/images/mentor-icons/heart.svg" alt="">
@@ -226,7 +252,7 @@
                         <span>Job search, Career advice</span>
                     </div>
                 </div>
-                <div>
+                <div class="mentor-card">
                     <div class="rating">
                         <p>⚡️Available ASAP</p>
                         <img src="/assets/images/mentor-icons/heart.svg" alt="">
@@ -240,7 +266,7 @@
                         <span>Job search, Career advice</span>
                     </div>
                 </div>
-                <div>
+                <div class="mentor-card">
                     <div class="rating">
                         <p>⚡️Available ASAP</p>
                         <img src="/assets/images/mentor-icons/heart.svg" alt="">
@@ -254,7 +280,7 @@
                         <span>Job search, Career advice</span>
                     </div>
                 </div>
-                <div>
+                <div class="mentor-card">
                     <div class="rating">
                         <p>⚡️Available ASAP</p>
                         <img src="/assets/images/mentor-icons/heart.svg" alt="">
@@ -268,7 +294,7 @@
                         <span>Job search, Career advice</span>
                     </div>
                 </div>
-                <div>
+                <div class="mentor-card">
                     <div class="rating">
                         <p>⚡️Available ASAP</p>
                         <img src="/assets/images/mentor-icons/heart.svg" alt="">
@@ -282,7 +308,7 @@
                         <span>Job search, Career advice</span>
                     </div>
                 </div>
-                <div>
+                <div class="mentor-card">
                     <div class="rating">
                         <p>⚡️Available ASAP</p>
                         <img src="/assets/images/mentor-icons/heart.svg" alt="">
@@ -296,7 +322,7 @@
                         <span>Job search, Career advice</span>
                     </div>
                 </div>
-                <div>
+                <div class="mentor-card">
                     <div class="rating">
                         <p>⚡️Available ASAP</p>
                         <img src="/assets/images/mentor-icons/heart.svg" alt="">
@@ -310,7 +336,7 @@
                         <span>Job search, Career advice</span>
                     </div>
                 </div>
-                <div>
+                <div class="mentor-card">
                     <div class="rating">
                         <p>⚡️Available ASAP</p>
                         <img src="/assets/images/mentor-icons/heart.svg" alt="">
@@ -420,95 +446,95 @@
                 </div>
             </div>
             <div class="slick-right slick splide" id="slider3"">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="testimonial-card">
-                                <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
-                                    valuable advice.
-                                    He's also a great storyteller! Definitely book a session with him 😊</p>
-                                <div class="user">
-                                    <img src="https://robohash.org/babalola" alt="">
-                                    <div class="user-details">
-                                        <p>Babalola Zhang</p>
-                                        <p>Student, Cleveland</p>
-                                    </div>
+                <div class=" splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
+                                valuable advice.
+                                He's also a great storyteller! Definitely book a session with him 😊</p>
+                            <div class="user">
+                                <img src="https://robohash.org/babalola" alt="">
+                                <div class="user-details">
+                                    <p>Babalola Zhang</p>
+                                    <p>Student, Cleveland</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="testimonial-card">
-                                <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
-                                    valuable advice.
-                                    He's also a great storyteller! Definitely book a session with him 😊</p>
-                                <div class="user">
-                                    <img src="https://robohash.org/masha" alt="">
-                                    <div class="user-details">
-                                        <p>Masha markgraf</p>
-                                        <p>Founder and CEO, Westland</p>
-                                    </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
+                                valuable advice.
+                                He's also a great storyteller! Definitely book a session with him 😊</p>
+                            <div class="user">
+                                <img src="https://robohash.org/masha" alt="">
+                                <div class="user-details">
+                                    <p>Masha markgraf</p>
+                                    <p>Founder and CEO, Westland</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="testimonial-card">
-                                <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
-                                    valuable advice.
-                                    He's also a great storyteller! Definitely book a session with him 😊</p>
-                                <div class="user">
-                                    <img src="https://robohash.org/lara" alt="">
-                                    <div class="user-details">
-                                        <p>Lara Lopez</p>
-                                        <p>Designer, TX</p>
-                                    </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
+                                valuable advice.
+                                He's also a great storyteller! Definitely book a session with him 😊</p>
+                            <div class="user">
+                                <img src="https://robohash.org/lara" alt="">
+                                <div class="user-details">
+                                    <p>Lara Lopez</p>
+                                    <p>Designer, TX</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="testimonial-card">
-                                <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
-                                    valuable advice.
-                                    He's also a great storyteller! Definitely book a session with him 😊</p>
-                                <div class="user">
-                                    <img src="https://robohash.org/Veronicahira" alt="">
-                                    <div class="user-details">
-                                        <p>Veronica white</p>
-                                        <p>UX designer</p>
-                                    </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
+                                valuable advice.
+                                He's also a great storyteller! Definitely book a session with him 😊</p>
+                            <div class="user">
+                                <img src="https://robohash.org/Veronicahira" alt="">
+                                <div class="user-details">
+                                    <p>Veronica white</p>
+                                    <p>UX designer</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="testimonial-card">
-                                <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
-                                    valuable advice.
-                                    He's also a great storyteller! Definitely book a session with him 😊</p>
-                                <div class="user">
-                                    <img src="https://robohash.org/erica" alt="">
-                                    <div class="user-details">
-                                        <p>Erica baremo</p>
-                                        <p>Student, Springboard</p>
-                                    </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
+                                valuable advice.
+                                He's also a great storyteller! Definitely book a session with him 😊</p>
+                            <div class="user">
+                                <img src="https://robohash.org/erica" alt="">
+                                <div class="user-details">
+                                    <p>Erica baremo</p>
+                                    <p>Student, Springboard</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="testimonial-card">
-                                <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
-                                    valuable advice.
-                                    He's also a great storyteller! Definitely book a session with him 😊</p>
-                                <div class="user">
-                                    <img src="https://robohash.org/lake" alt="">
-                                    <div class="user-details">
-                                        <p>Lake Cam</p>
-                                        <p>UX/UI designer, Creative media</p>
-                                    </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-card">
+                            <p>Andres is a fantastic mentor. He answered every question thoughtfully and shared
+                                valuable advice.
+                                He's also a great storyteller! Definitely book a session with him 😊</p>
+                            <div class="user">
+                                <img src="https://robohash.org/lake" alt="">
+                                <div class="user-details">
+                                    <p>Lake Cam</p>
+                                    <p>UX/UI designer, Creative media</p>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-  
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
             </div>
         </section>
 
@@ -528,7 +554,7 @@
                 </div>
             </div>
             <!-- <div class=""></div> -->
-            <div class="row2 space-between">
+            <div class="row2">
                 <ul>
                     <li><a href="https://adplist.org/explore?tab=mentors">find mentors</a></li>
                     <li><a href="https://adplist.org/become-a-mentor">become a mentor</a></li>
@@ -543,7 +569,7 @@
                     <li><a href="mailto: partnerships@adplist.org">partnerships</a></li>
                 </ul>
             </div>
-            <div class="row3 space-between">
+            <div class="row3">
                 <p>Copyright 2022 - ADPList</p>
                 <ul>
                     <li><a href="mailto: support@adplist.org">Contact us</a></li>
@@ -552,6 +578,7 @@
                     <li><a href="https://adplist.org/sitemap">Sitemap</a></li>
                 </ul>
             </div>
+
         </footer>
     </main>
     <script

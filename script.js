@@ -25,7 +25,13 @@ const splide = new Splide( '#slider1', {
     focus  : 'center',
     pagination   : false,
     arrows : false,
-    perPage: 4,
+    perPage: 2,
+    mediaQuery: 'max',
+    breakpoints: {
+      980: {
+        perPage: 1.5,
+      },
+    },
     autoScroll: {
       speed: 1,
       pauseOnHover: false,
@@ -39,14 +45,19 @@ const splide = new Splide( '#slider1', {
     focus  : 'center',
     pagination   : false,
     arrows : false,
-    perPage: 4,
+    perPage: 2,
+    mediaQuery: 'max',
+    breakpoints: {
+      980: {
+        perPage: 1.5,
+      },
+    },
     autoScroll: {
       speed: -1,
       pauseOnHover: false,
     },
   } );
   splideLeft.mount( window.splide.Extensions );
-
 
 const countries = [];
 let countryOptions;
