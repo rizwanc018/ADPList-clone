@@ -10,8 +10,17 @@ const splide = new Splide( '#slider1', {
     focus  : 'center',
     pagination   : false,
     arrows : false,
-    perPage: 7,
+    perPage: 6,
     gap: '2rem',
+    mediaQuery: 'max',
+    breakpoints: {
+      480: {
+        perPage: 2,
+      },
+      900: {
+        perPage: 5,
+      },
+    },
     autoScroll: {
       speed: 2,
       pauseOnHover: false,
@@ -28,6 +37,9 @@ const splide = new Splide( '#slider1', {
     perPage: 2,
     mediaQuery: 'max',
     breakpoints: {
+      480: {
+        perPage: 1,
+      },
       980: {
         perPage: 1.5,
       },
@@ -48,6 +60,9 @@ const splide = new Splide( '#slider1', {
     perPage: 2,
     mediaQuery: 'max',
     breakpoints: {
+      480: {
+        perPage: 1,
+      },
       980: {
         perPage: 1.5,
       },
