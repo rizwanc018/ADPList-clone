@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="style.css">
     <title>ADPList</title>
@@ -21,21 +22,15 @@
             <ul role='list'>
                 <li><a href="https://adplist.org/become-a-mentor">Become a mentor</a></li>
                 <li><a href="https://adplist.org/explore?tab=mentors">Find a mentor</a></li>
-                <!-- <li><button class="login">Log in</button></li> -->
-                <!-- <li><button class="signup">Sign up</button></li> -->
             </ul>
             <button class="login">Log in</button>
             <button class="signup">Sign up</button>
             <a href="javascript:void(0);" class="icon-bar showIcon" id="icon-bar" onclick="myFunction()">
-                <!-- <i class="fa fa-bars"></i> -->
                 <i><img src="/bar.svg" alt=""></i>
               </a>  <a href="javascript:void(0);" id="icon-close" class="icon-close" onclick="myFunction()">
-                <!-- <i class="fa fa-close"></i> -->
                 <i><img src="/close.svg" alt=""></i>
               </a>
         </nav>
-        <!-- <button class="login">Log in</button> -->
-        <!-- <button class="signup">Sign up</button> -->
     </header>
 
     <script>
@@ -44,12 +39,10 @@
           let bar = document.getElementById("icon-bar")
           let close = document.getElementById("icon-close")
 
-        //   if (header.className === "header") {
             header.classList.toggle('responsive');
             header.classList.toggle('hideSome')
             bar.classList.toggle('showIcon');
             close.classList.toggle('showIcon')
-        //   } 
         }
         </script>
 
@@ -65,9 +58,7 @@
                 <form class="flex search-wrapper" action="#">
                     <i class="material-icons">search</i>
                     <input type="search" placeholder="  Search by company, language or role">
-                    <!-- <div class="divider"></div> -->
                     <select class="expertise" name="expertise" id="expertise">
-                        <!-- disabled selected hidden -->
                         <option value="" hidden>Expertise</option>
                         <option value="1">Content Writing</option>
                         <option value="2">Data Science</option>
@@ -76,9 +67,7 @@
                         <option value="5">Product Management</option>
                         <option value="6">Software Development</option>
                     </select>
-                    <!-- <div class="divider"></div> -->
                     <select class="country" name="country" id="country">
-                        <!-- disabled selected hidden -->
                         <option value="" hidden>Country</option>
                     </select>
                     <button>Search</button>
@@ -192,9 +181,7 @@
 
         <section class="features">
             <div class="features-card">
-                <!-- <div class="ftr-img"> -->
                 <img src="/assets/images/features/1.png" alt="">
-                <!-- </div> -->
                 <div>
                     <h2>Leap 10x career growth with iconic mentors</h2>
                     <p>If you're looking for advice, jamming or networking - ADPList lets you freely schedule a 1:1
@@ -210,14 +197,10 @@
 
                     <button>Get a match today</button>
                 </div>
-                <!-- <div class="ftr-img"> -->
                 <img src="/assets/images/features/2.png" alt="">
-                <!-- </div> -->
             </div>
             <div class="features-card">
-                <!-- <div class="ftr-img"> -->
                 <img src="/assets/images/features/3.png" alt="">
-                <!-- </div> -->
                 <div>
                     <h2>More visible, get scouted as a talent</h2>
                     <p>Out of a job, not out of touch. ADPList lets you list yourself as a talent in the community and
@@ -233,8 +216,6 @@
                 <h3>Discover the world's top mentors</h3>
                 <div>
                     <button>Explore all</button>
-                    <!-- <img src="/assets/images/mentor-icons/scroll-left.png" alt="">
-                    <img src="/assets/images/mentor-icons/scroll-right.png" alt=""> -->
                 </div>
             </div>
             <div class="mentors-slick-container">
@@ -316,7 +297,7 @@
                     <div class="details">
                         <p>Andressa Seigel</p>
                         <img src="/assets/images/mentor-icons/box.svg" alt="">
-                        <span></span>
+                        <span>Developer</span>
                         <div></div>
                         <img src="/assets/images/mentor-icons/chat.svg" alt="">
                         <span>Job search, Career advice</span>
@@ -553,7 +534,6 @@
                     <a href="https://www.youtube.com/"><img src="assets/images/social-icons/tiktok.png" alt=""></a>
                 </div>
             </div>
-            <!-- <div class=""></div> -->
             <div class="row2">
                 <ul>
                     <li><a href="https://adplist.org/explore?tab=mentors">find mentors</a></li>
